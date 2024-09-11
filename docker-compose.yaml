@@ -1,0 +1,15 @@
+# Main composition file for SMTP Server Application Container.
+# Author: Arthur Cadore M. Barcella
+# Github: arthurcadore
+
+version: '3.8'
+services:
+  # Application container
+  ansibleserver:
+    container_name: smtpserver
+    ports:
+      - "1080:1080"
+      - "1025:1025"
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile

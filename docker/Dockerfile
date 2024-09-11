@@ -1,0 +1,1 @@
+FROM dockage/mailcatcher:0.9
